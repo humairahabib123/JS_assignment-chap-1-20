@@ -72,9 +72,9 @@
 // }
 // document.write(greeting)
 
-var birth_year = 2002;
-var rightnow = new Date();
-var curr_year = rightnow.getFullYear();
+var birth_year = parseInt(prompt("Enter your birth year"));
+var date = new Date();
+var curr_year = date.getFullYear();
 var age = curr_year - birth_year;
 document.write(`Current Year: ${curr_year} <br/>`)
 document.write(`Birth Year: ${birth_year} <br/>`)

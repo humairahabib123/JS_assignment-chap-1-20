@@ -120,13 +120,13 @@ document.write (`Answer of Mathematical expression: ${expr}`);
 // Question # 11:
 document.write("<h1>Question # 11</h1>");
 document.write("<h2>Age Calculator</h2>");
-var birth_year = 2002;
-var rightnow = new Date();
-var curr_year = rightnow.getFullYear();
+var birth_year = parseInt(prompt("Enter your birth year"));
+var date = new Date();
+var curr_year = date.getFullYear();
 var age = curr_year - birth_year;
 document.write(`Current Year: ${curr_year} <br/>`)
 document.write(`Birth Year: ${birth_year} <br/>`)
-document.write(`Your Age is: ${age} <br/>`)
+document.write(`Your Age: ${age} <br/>`)
 
 // Question # 12:
 document.write("<h1>Question # 12</h1>");
