@@ -117,13 +117,16 @@ document.write("<h1>Question # 10</h1>");
 var expr = (5 * 10) / 2;
 document.write (`Answer of Mathematical expression: ${expr}`);
 
-// // Question # 11:
-// document.write("<h1>Question # 11</h1>");
-// document.write("<h2>Age Calculator</h2>");
-// var year;
-// var current_year = year.getDay();
-// // var birth_year = 1992;
-// document.write(year);
+// Question # 11:
+document.write("<h1>Question # 11</h1>");
+document.write("<h2>Age Calculator</h2>");
+var birth_year = 2002;
+var rightnow = new Date();
+var curr_year = rightnow.getFullYear();
+var age = curr_year - birth_year;
+document.write(`Current Year: ${curr_year} <br/>`)
+document.write(`Birth Year: ${birth_year} <br/>`)
+document.write(`Your Age is: ${age} <br/>`)
 
 // Question # 12:
 document.write("<h1>Question # 12</h1>");
