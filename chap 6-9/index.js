@@ -70,12 +70,13 @@ var sub2 = prompt("Enter second subject name:")
 var marks2 = parseInt(prompt("Enter marks obtained in second subject..."))
 var sub3 = prompt("Enter third subject name:")
 var marks3 = parseInt(prompt("Enter marks obtained in third subject..."))
-
-var per1 = (marks1 / 100) * 100;
-var per2 = (marks2 / 100) * 100;
-var per3 = (marks3 / 100) * 100;
-var totMarks = marks1 + marks2 + marks3;
-var totper = per1  + per2 +per3; 
+var totMarks = 100;
+var MaxMarks
+var per1 = (marks1 / totMarks) * 100;
+var per2 = (marks2 / totMarks) * 100;
+var per3 = (marks3 / totMarks) * 100;
+var maxMarks = marks1 + marks2 + marks3;
+var totper = (maxMarks / 300) * 100 ; 
 
 document.write(`<table>
 <tr>
@@ -105,7 +106,7 @@ document.write(`<table>
 <tr>
     <th></th>
     <th>300</th> 
-    <th>${totMarks}</th>
+    <th>${maxMarks}</th>
     <th>${totper}%</th>
 </tr>
 </table><br/>`)
