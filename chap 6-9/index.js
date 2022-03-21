@@ -39,28 +39,22 @@ document.write(`Assalam o alaikum ${name} !!`);
 
 // Question # 05:
 document.write("<h1>Question # 05:</h1>");
-var num = parseInt(prompt(`Enter any number to get it's table`));
-var range = parseInt(prompt(`From which num do want to get your table?`));
-document.write(`<b><u> Table of ${num} till ${range} : </u></b><br/><br/>`)
+var num = prompt(`Enter any number to get it's table`);
+var range = prompt(`From which num do want to get your table?`);
+
+if (num === ""){
+    for (x = 1; x <= 10; x++){
+        table = 5 * x;
+        document.write(`5 X ${x} = ${table} <br/>`)
+    }
+}
+else{
+    document.write(`<b><u> Table of ${num} till ${range}: </u></b><br/><br/>`)
 for (x = 1; x <= range; x++){
     table = num * x;
     document.write(`${num} X ${x} = ${table} <br/>`)
 }
-
-// if (parseInt === num && parseInt === range){
-// document.write(`<b><u> Table of ${num} till ${range} : </u></b><br/><br/>`)
-// for (x = 1; x <= range; x++){
-//         table = num * x;
-//         document.write(`${num} X ${x} = ${table} <br/>`)
-//     }  
-// }
-// else{
-//     document.write(`<b><u>You didn't enter any number to get table that's why browser shows table of 5 by default..!!</u></b><br/><br/>`)
-//     for (x = 1; x <= 10; x++){
-//         table = 5 * x;
-//         document.write(`5 X ${x} = ${table} <br/>`)
-//     }
-// }
+}
 
 // Question # 06:
 document.write("<h1>Question # 06:</h1>");
