@@ -146,4 +146,8 @@ var curr_age = 20;
 var max_age = 75;
 var per_day = 5;
 var tot_amount = (max_age - curr_age) * 3 ;
+document.write(`Favourite Snack:s ${fav_snack} <br/>`);
+document.write(`Current Age: ${curr_age}<br/>`);
+document.write(`Estimated Maximum Age: ${max_age}<br/>`);
+document.write(`Amount of Snacks Per Day: ${per_day}<br/>`)
 document.write(`You will need ${tot_amount} ${fav_snack} to last you until the ripe old age of ${max_age}`)

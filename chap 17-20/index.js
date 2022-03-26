@@ -16,22 +16,24 @@ for(x = 1; x <=10; x++){
     document.write(`${x} <br/>`)
 }
 
-// Question # 04:
-document.write("<h1>Question # 04</h1>");
-var num = parseInt(prompt(`Enter a number to show it's Multiplication table`));
-var range = parseInt(prompt(`Enter length multiplication table`));
-document.write(`Multiplication table of ${num}<br/>`);
-document.write(`length ${range}<br/><br/>`);
-for (x = 1; x <= range; x++){
-    table = num * x;
-    document.write(`${num} X ${x} = ${table} <br/>`)
-}
+// // Question # 04:
+// document.write("<h1>Question # 04</h1>");
+// var num = parseInt(prompt(`Enter a number to show it's Multiplication table`));
+// var range = parseInt(prompt(`Enter length multiplication table`));
+// document.write(`Multiplication table of ${num}<br/>`);
+// document.write(`length ${range}<br/><br/>`);
+// for (x = 1; x <= range; x++){
+//     table = num * x;
+//     document.write(`${num} X ${x} = ${table} <br/>`)
+// }
 
 // Question # 05:
 document.write("<h1>Question # 05</h1>");
 fruits = ["apple", "banana", "mango","orange", "strawberry"];
 for (i = 0; i < fruits.length; i++ ){
+    for(j = 1; j < fruits.length; j++){
         document.write(`${fruits} <br/>`)
+    }
 }
 
 for (x = 0; x < fruits.length; x++){
